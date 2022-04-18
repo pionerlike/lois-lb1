@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  	<meta charset="utf-8">
+  	<script src = "LOIS№1.js"></script>
+</head>
+
+<body>
+	<label>Formula:<input type="text" id="formula" value="" style="font-family: Verdana; font-size: 12px; margin-left: 10px; width: 300px;"></label>
+	<button id="start" onclick='myMain();' style="font-family: Verdana; font-size: 12px; margin-left: 30px; width: 80px;">Check</button> <br>
+	<label>Result:</label>
+	<label id="result" style = "margin-left: 20px;"></label>
+	<br>
+	<label>-----------------------------------------------------------------------------------------</label>
+	<br>
+	<label>Is it DNF?</label>
+	<br>
+	<label id="formulaForTesting" style = "margin-left: 20px;">(A|B)</label>
+	<button id="btnYes" onclick="testKnowledge(this)" style="font-family: Verdana; font-size: 12px; margin-left: 30px; width: 80px;">Yes</button>
+	<button id="btnNo" onclick="testKnowledge(this)" style="font-family: Verdana; font-size: 12px; margin-left: 30px; width: 80px;">No</button>
+	<button id="btnNext" onclick="createFormula()" style="font-family: Verdana; font-size: 12px; margin-left: 30px; width: 120px;">Next formula</button>
+	<br>
+	<label>Result:</label>
+	<label id="resultTesting" style = "margin-left: 20px;"></label>
+</body>
+
+</html>
